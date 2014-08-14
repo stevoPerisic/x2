@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		16483A4218D797F600444622 /* PPNFaceDetectionResults.h in Headers */ = {isa = PBXBuildFile; fileRef = 16483A4018D797F600444622 /* PPNFaceDetectionResults.h */; };
+		16483A4318D797F600444622 /* PPNFaceDetectionResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 16483A4118D797F600444622 /* PPNFaceDetectionResults.m */; };
+		16C398B918CF4B8400F95AD0 /* ComPeoplenetFacedetectView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C398B718CF4B8400F95AD0 /* ComPeoplenetFacedetectView.h */; };
+		16C398BA18CF4B8400F95AD0 /* ComPeoplenetFacedetectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C398B818CF4B8400F95AD0 /* ComPeoplenetFacedetectView.m */; };
+		16C398BD18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C398BB18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.h */; };
+		16C398BE18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C398BC18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.m */; };
+		16CB5AF718D756DE0065290F /* PPNImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 16CB5AF518D756DE0065290F /* PPNImageHelper.h */; };
+		16CB5AF818D756DE0065290F /* PPNImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CB5AF618D756DE0065290F /* PPNImageHelper.m */; };
+		2293D47418FF461E0065C8DA /* PPNImageEnhancer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2293D47218FF461E0065C8DA /* PPNImageEnhancer.h */; };
+		2293D47518FF461E0065C8DA /* PPNImageEnhancer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2293D47318FF461E0065C8DA /* PPNImageEnhancer.m */; };
+		2293D478190035BF0065C8DA /* PPNExposurePointOfInterest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2293D476190035BF0065C8DA /* PPNExposurePointOfInterest.h */; };
+		2293D479190035BF0065C8DA /* PPNExposurePointOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2293D477190035BF0065C8DA /* PPNExposurePointOfInterest.m */; };
+		2293D47E1900598D0065C8DA /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2293D47B1900598D0065C8DA /* Logger.h */; };
+		2293D47F1900598D0065C8DA /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2293D47C1900598D0065C8DA /* Logger.m */; };
+		2293D4801900598D0065C8DA /* LoggingProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2293D47D1900598D0065C8DA /* LoggingProtocol.h */; };
+		2293D48319005D4D0065C8DA /* PPNVideoSampleOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 2293D48119005D4D0065C8DA /* PPNVideoSampleOutput.h */; };
+		2293D48419005D4D0065C8DA /* PPNVideoSampleOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 2293D48219005D4D0065C8DA /* PPNVideoSampleOutput.m */; };
+		24DD6CF91134B3F500162E58 /* ComPeoplenetFacedetectModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ComPeoplenetFacedetectModule.h */; };
+		24DD6CFA1134B3F500162E58 /* ComPeoplenetFacedetectModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComPeoplenetFacedetectModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.m */; };
+		AA747D9F0F9514B9006C5449 /* ComPeoplenetFacedetect_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ComPeoplenetFacedetect_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = faceDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16483A4018D797F600444622 /* PPNFaceDetectionResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPNFaceDetectionResults.h; path = Classes/PPNFaceDetectionResults.h; sourceTree = "<group>"; };
+		16483A4118D797F600444622 /* PPNFaceDetectionResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPNFaceDetectionResults.m; path = Classes/PPNFaceDetectionResults.m; sourceTree = "<group>"; };
+		16A37DCD18CFA0A1009F4620 /* AVCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVCamViewController.h; path = Views/AVCamViewController.h; sourceTree = "<group>"; };
+		16A37DCE18CFA0A1009F4620 /* AVCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AVCamViewController.m; path = Views/AVCamViewController.m; sourceTree = "<group>"; };
+		16A37DD218CFA102009F4620 /* AVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AVCamPreviewView.h; path = Views/AVCamPreviewView.h; sourceTree = "<group>"; };
+		16A37DD318CFA102009F4620 /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AVCamPreviewView.m; path = Views/AVCamPreviewView.m; sourceTree = "<group>"; };
+		16A37DD618CFA2E3009F4620 /* module.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = module.xcconfig; sourceTree = "<group>"; };
+		16C398B718CF4B8400F95AD0 /* ComPeoplenetFacedetectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComPeoplenetFacedetectView.h; path = Views/ComPeoplenetFacedetectView.h; sourceTree = "<group>"; };
+		16C398B818CF4B8400F95AD0 /* ComPeoplenetFacedetectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComPeoplenetFacedetectView.m; path = Views/ComPeoplenetFacedetectView.m; sourceTree = "<group>"; };
+		16C398BB18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComPeoplenetFacedetectViewProxy.h; path = Views/ComPeoplenetFacedetectViewProxy.h; sourceTree = "<group>"; };
+		16C398BC18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComPeoplenetFacedetectViewProxy.m; path = Views/ComPeoplenetFacedetectViewProxy.m; sourceTree = "<group>"; };
+		16CB5AF518D756DE0065290F /* PPNImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPNImageHelper.h; path = Classes/PPNImageHelper.h; sourceTree = "<group>"; };
+		16CB5AF618D756DE0065290F /* PPNImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPNImageHelper.m; path = Classes/PPNImageHelper.m; sourceTree = "<group>"; };
+		2293D47218FF461E0065C8DA /* PPNImageEnhancer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPNImageEnhancer.h; path = Classes/PPNImageEnhancer.h; sourceTree = "<group>"; };
+		2293D47318FF461E0065C8DA /* PPNImageEnhancer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPNImageEnhancer.m; path = Classes/PPNImageEnhancer.m; sourceTree = "<group>"; };
+		2293D476190035BF0065C8DA /* PPNExposurePointOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPNExposurePointOfInterest.h; path = Classes/PPNExposurePointOfInterest.h; sourceTree = "<group>"; };
+		2293D477190035BF0065C8DA /* PPNExposurePointOfInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPNExposurePointOfInterest.m; path = Classes/PPNExposurePointOfInterest.m; sourceTree = "<group>"; };
+		2293D47A190058200065C8DA /* PPNFacesDetectedDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PPNFacesDetectedDelegate.h; path = Classes/PPNFacesDetectedDelegate.h; sourceTree = "<group>"; };
+		2293D47B1900598D0065C8DA /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = Classes/Logger.h; sourceTree = "<group>"; };
+		2293D47C1900598D0065C8DA /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Logger.m; path = Classes/Logger.m; sourceTree = "<group>"; };
+		2293D47D1900598D0065C8DA /* LoggingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoggingProtocol.h; path = Classes/LoggingProtocol.h; sourceTree = "<group>"; };
+		2293D48119005D4D0065C8DA /* PPNVideoSampleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PPNVideoSampleOutput.h; path = Classes/PPNVideoSampleOutput.h; sourceTree = "<group>"; };
+		2293D48219005D4D0065C8DA /* PPNVideoSampleOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PPNVideoSampleOutput.m; path = Classes/PPNVideoSampleOutput.m; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* ComPeoplenetFacedetectModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComPeoplenetFacedetectModule.h; path = Classes/ComPeoplenetFacedetectModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ComPeoplenetFacedetectModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComPeoplenetFacedetectModule.m; path = Classes/ComPeoplenetFacedetectModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComPeoplenetFacedetectModuleAssets.h; path = Classes/ComPeoplenetFacedetectModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComPeoplenetFacedetectModuleAssets.m; path = Classes/ComPeoplenetFacedetectModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ComPeoplenetFacedetect_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComPeoplenetFacedetect_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libComPeoplenetFacedetect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComPeoplenetFacedetect.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libComPeoplenetFacedetect.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* faceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				16A37E2B18D10046009F4620 /* Reference Only */,
+				16C398B218CF4AB800F95AD0 /* Views */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = faceDetection;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24DE9E0F11C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* ComPeoplenetFacedetectModule.h */,
+				24DD6CF81134B3F500162E58 /* ComPeoplenetFacedetectModule.m */,
+				2293D47B1900598D0065C8DA /* Logger.h */,
+				2293D47C1900598D0065C8DA /* Logger.m */,
+				2293D47D1900598D0065C8DA /* LoggingProtocol.h */,
+				16483A4018D797F600444622 /* PPNFaceDetectionResults.h */,
+				16483A4118D797F600444622 /* PPNFaceDetectionResults.m */,
+				2293D476190035BF0065C8DA /* PPNExposurePointOfInterest.h */,
+				2293D477190035BF0065C8DA /* PPNExposurePointOfInterest.m */,
+				2293D47218FF461E0065C8DA /* PPNImageEnhancer.h */,
+				2293D47318FF461E0065C8DA /* PPNImageEnhancer.m */,
+				16CB5AF518D756DE0065290F /* PPNImageHelper.h */,
+				16CB5AF618D756DE0065290F /* PPNImageHelper.m */,
+				2293D47A190058200065C8DA /* PPNFacesDetectedDelegate.h */,
+				2293D48119005D4D0065C8DA /* PPNVideoSampleOutput.h */,
+				2293D48219005D4D0065C8DA /* PPNVideoSampleOutput.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		16A37E2B18D10046009F4620 /* Reference Only */ = {
+			isa = PBXGroup;
+			children = (
+				16A37DCE18CFA0A1009F4620 /* AVCamViewController.m */,
+				16A37DCD18CFA0A1009F4620 /* AVCamViewController.h */,
+				16A37DD218CFA102009F4620 /* AVCamPreviewView.h */,
+				16A37DD318CFA102009F4620 /* AVCamPreviewView.m */,
+			);
+			name = "Reference Only";
+			sourceTree = "<group>";
+		};
+		16C398B218CF4AB800F95AD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16C398B718CF4B8400F95AD0 /* ComPeoplenetFacedetectView.h */,
+				16C398B818CF4B8400F95AD0 /* ComPeoplenetFacedetectView.m */,
+				16C398BB18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.h */,
+				16C398BC18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				16A37DD618CFA2E3009F4620 /* module.xcconfig */,
+				AA747D9E0F9514B9006C5449 /* ComPeoplenetFacedetect_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2293D48319005D4D0065C8DA /* PPNVideoSampleOutput.h in Headers */,
+				2293D478190035BF0065C8DA /* PPNExposurePointOfInterest.h in Headers */,
+				2293D47418FF461E0065C8DA /* PPNImageEnhancer.h in Headers */,
+				2293D47E1900598D0065C8DA /* Logger.h in Headers */,
+				16CB5AF718D756DE0065290F /* PPNImageHelper.h in Headers */,
+				16C398B918CF4B8400F95AD0 /* ComPeoplenetFacedetectView.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* ComPeoplenetFacedetect_Prefix.pch in Headers */,
+				16483A4218D797F600444622 /* PPNFaceDetectionResults.h in Headers */,
+				2293D4801900598D0065C8DA /* LoggingProtocol.h in Headers */,
+				16C398BD18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.h in Headers */,
+				24DD6CF91134B3F500162E58 /* ComPeoplenetFacedetectModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* faceDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "faceDetection" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = faceDetection;
+			productName = faceDetection;
+			productReference = D2AAC07E0554694100DB518D /* libComPeoplenetFacedetect.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "faceDetection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* faceDetection */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* faceDetection */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C398BE18CF4BA700F95AD0 /* ComPeoplenetFacedetectViewProxy.m in Sources */,
+				16483A4318D797F600444622 /* PPNFaceDetectionResults.m in Sources */,
+				16C398BA18CF4B8400F95AD0 /* ComPeoplenetFacedetectView.m in Sources */,
+				2293D479190035BF0065C8DA /* PPNExposurePointOfInterest.m in Sources */,
+				24DD6CFA1134B3F500162E58 /* ComPeoplenetFacedetectModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* ComPeoplenetFacedetectModuleAssets.m in Sources */,
+				16CB5AF818D756DE0065290F /* PPNImageHelper.m in Sources */,
+				2293D47518FF461E0065C8DA /* PPNImageEnhancer.m in Sources */,
+				2293D47F1900598D0065C8DA /* Logger.m in Sources */,
+				2293D48419005D4D0065C8DA /* PPNVideoSampleOutput.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* faceDetection */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/ComPeoplenetFacedetect.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ComPeoplenetFacedetect_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ComPeoplenetFacedetect;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/ComPeoplenetFacedetect.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ComPeoplenetFacedetect_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ComPeoplenetFacedetect;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/ComPeoplenetFacedetect.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ComPeoplenetFacedetect_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ComPeoplenetFacedetect;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DSTROOT = /tmp/ComPeoplenetFacedetect.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ComPeoplenetFacedetect_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ComPeoplenetFacedetect;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "faceDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "faceDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

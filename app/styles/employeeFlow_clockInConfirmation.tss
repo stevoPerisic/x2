@@ -1,0 +1,137 @@
+//******************************************
+// CLOCK IN CONFIRMATION
+".content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+	layout: 'vertical'
+},
+"#clockIn_confirmation": {
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true
+},
+"#review": {
+	height: '50%',
+	width: Ti.UI.Fill,
+	backgroundColor: '#fff',
+	layout: 'horizontal'
+},
+"#reviewLeft": {
+	top: '30dp',
+	width: '56%',
+	height: Ti.UI.Fill,
+	left: '4%',
+	layout: 'vertical'
+},
+".reviewLabel":{
+	height: '30dp',
+	width: "100%",
+	font: {
+		fontSize: '22dp'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+"#reviewText":{
+	width: "100%",
+	font: {
+		fontSize: '30dp'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#nameAndPin": {
+	top: '20dp',
+	font: {
+		fontWeight: 'bold',
+		fontSize: '22dp'
+	}
+},
+"#clockInTime":{
+	color: "#ff9500",
+	font: {
+		fontWeight: 'bold',
+		fontSize: '22dp'
+	}
+},
+"#reviewRight":{
+	top: '20dp',
+	width: '40%',
+	height: Ti.UI.Fill,
+	layout: 'horizontal'
+}
+".reviewPic": {
+	top: '20dp',
+	width: '180dp',
+	height: '240dp'
+}
+".reviewPicLabel": {
+	height: '20dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	bottom: '15dp',
+	font:{
+		fontWeight: 'bold'
+	}
+}
+"#punchPhotoWrap": {
+	borderRadius: 10,
+	borderWidth: 1,
+	borderColor: '#ff9500',
+	left: '2%',
+	right: '2%'
+},
+
+"#acceptPunchButtons": {
+	height: '50%',
+	width: '100%',
+	backgroundColor: '#fcfcfc'
+},
+"#acceptPunchText": {
+	backgroundColor: '#fcfcfc',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	top: '40dp',
+	height: '40dp',
+	font: {
+		fontSize: '30dp'
+	}
+},
+".confirmationLabel":{
+	top: '110dp',
+	width: '300dp',
+	height: '60dp',
+	borderRadius: 10,
+	borderColor: '#62bb47',
+	backgroundColor: '#62bb47',
+	color: "#fff",
+	font: {
+		fontSize: '25dp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#yesAcceptPunch":{
+	left: '15%'
+},
+"#yesAndViewHours":{
+	right: '15%'
+},
+"#exit":{
+	left: '34.5%',
+	backgroundColor: '#fcfcfc',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	bottom: '70dp',
+	height: '60dp',
+	width: '310dp',
+	color: '#34aadc',
+	font: {
+		fontSize: '25dp',
+		fontWeight: 'bold'
+	},
+	borderWidth: 1,
+	borderRadius: 10,
+	borderColor: '#34aadc'
+}
+
+
+
+
+

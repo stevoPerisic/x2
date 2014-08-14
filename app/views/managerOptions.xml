@@ -1,0 +1,42 @@
+<!-- //**************************************************
+//*******	MANAGER OPTIONS MASTER VIEW	****************
+//************************************************** -->
+<Alloy>
+	<Window id="managerOptions" class="container">
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+		<Require id="header" src="header"/>
+		<View id="content">
+
+			<View id="sidebar">
+				<Label id="sidebarHeader" text="Manager Options"/>
+				
+				<View id="sideBarMenu">
+					<View id="settings" class="managerOptionsSidemenu active" autoStyle="true" viewToLoad="managerOptions_settings">
+						<ImageView class="sideBarMenuIcon" image="/images/icons/settings-32-white.png"/>
+						<Label id="settingsLbl" class="managerOptionsSidemenuLabel activeLbl" autoStyle="true" text="Clock Settings"/>
+					</View>
+					<View id="people" class="managerOptionsSidemenu" autoStyle="true" viewToLoad="managerOptions_people">
+						<ImageView class="sideBarMenuIcon" image="/images/icons/people-32-blk.png"/>
+						<Label id="peopleLbl"  class="managerOptionsSidemenuLabel" autoStyle="true" text="People"/>
+					</View>
+					<View id="departments" class="managerOptionsSidemenu" autoStyle="true" viewToLoad="managerOptions_departments">
+						<ImageView class="sideBarMenuIcon" image="/images/icons/departments-32-blk.png"/>
+						<Label id="departmentsLbl" class="managerOptionsSidemenuLabel" autoStyle="true" text="Departments"/>
+					</View>
+					<View id="employees" class="managerOptionsSidemenu" autoStyle="true" viewToLoad="managerOptions_employees">
+						<ImageView class="sideBarMenuIcon" image="/images/icons/employees-32-blk.png"/>
+						<Label id="employeesLbl" class="managerOptionsSidemenuLabel" autoStyle="true" text="Employees"/>
+					</View>
+					<View id="reports" class="managerOptionsSidemenu" autoStyle="true" viewToLoad="managerOptions_reports">
+						<ImageView class="sideBarMenuIcon" image="/images/icons/reports-32-blk.png"/>
+						<Label id="reportsLbl" class="managerOptionsSidemenuLabel" autoStyle="true" text="Reports"/>
+					</View>
+				</View>
+			</View>
+
+			<View id="managerOptionsContent"/>
+
+		</View>
+		<Require id="footer" src="footer"/>
+	</Window>
+</Alloy>

@@ -1,0 +1,49 @@
+<Alloy>
+	<Window id="timecardDetail">
+
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+
+		<Require id="header" src="header"/>
+
+		<View class="content">
+
+			<View id="contentHeader">
+
+				<View id="weekNavBtns">
+					<Button id="previousWeek" class="weekNavBtn" platform="ios" autoStyle="true">
+		                <Label id="previousWeekLbl" class="weekNavLbl" autoStyle="true"/>
+		            </Button>
+		            <Button id="previousWeek" title="Previous" week="" platform="android" autoStyle="true"/>
+		            
+		            <View id="verticalLine"/>
+
+		            <Button id="nextWeek" class="weekNavBtn disabled" platform="ios" autoStyle="true">
+		                <Label id="nextWeekLbl" class="weekNavLbl labelDisabled" autoStyle="true"/>
+		            </Button>
+		            <Button id="nextWeek" class="disabled" title="Next" week="" platform="android" autoStyle="true"/>
+				</View>
+				
+	            <View id="commIconsWrap">
+	            	<Label id="print" class="commIcons">
+	            		<ImageView class="commIcons_icon" image="/images/icons/print-24.png"/>
+	            		<Label id="printLbl" class="commIcons_text" text="Print"/>
+	            	</Label>
+	            	<Label id="text" class="commIcons">
+	            		<ImageView class="commIcons_icon" image="/images/icons/text-message-24.png"/>
+	            		<Label id="smsLbl" class="commIcons_text" text="SMS"/>
+	            	</Label>
+	            	<Label id="email" class="commIcons">
+	            		<ImageView class="commIcons_icon" image="/images/icons/1395344760_icon-ios7-email.png"/>
+	            		<Label id="emailLbl" class="commIcons_text" text="Email"/>
+	            	</Label>
+	            </View>
+				
+			</View>
+
+			<View id="timecardWrap"/>
+			
+		</View>
+	</Window>
+</Alloy>
+
+

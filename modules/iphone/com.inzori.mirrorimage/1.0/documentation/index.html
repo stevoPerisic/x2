@@ -1,0 +1,28 @@
+<h1>mirrorimage Module</h1>
+<h2>Description</h2>
+<p>Simple module that allows image horizontal flipping (Mirror).
+Useful when taking pictures with the frontal camera.</p>
+<h2>Installation</h2>
+<p><a href="https://wiki.appcelerator.org/display/tis/Using+Titanium+Modules">http://wiki.appcelerator.org/display/tis/Using+Titanium+Modules</a></p>
+<h2>Changelog</h2>
+<p>See <a href="changelog.html">here</a></p>
+<h2>Accessing the mirrorimage Module</h2>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var mirrorimage = require("com.inzori.mirrorimage");
+</code></pre>
+<p>The mirrorimage variable is a reference to the Module object. <br />
+</p>
+<h2>Reference</h2>
+<p>This module exposes only one method:</p>
+<h3>mirrorImage.imageMirror(imageBlob)</h3>
+<h2>Usage</h2>
+<p>// convert imageView to image blob
+var imageBlob = iv.toImage();</p>
+<p>// the parameter must be a blob, returns a blob
+var newImageBlob = mirrorImage.imageMirror(imageBlob);</p>
+<h2>Author</h2>
+<p>Inzori Inc.
+2012 (c) Copyright Inzori Inc.
+contact@inzori.com</p>
+<h2>License</h2>
+<p>Inzori Commercial License</p>

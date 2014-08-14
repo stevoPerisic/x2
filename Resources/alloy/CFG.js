@@ -1,0 +1,1 @@
+module.exports={"dependencies":{"pinPad":"1.0"}};

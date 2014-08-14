@@ -1,0 +1,15 @@
+<Alloy>
+	<Window id="earlyOrLate">
+		<ActivityIndicator id="activityIndicator" />
+		<Require id="header" src="header"/>
+
+		<View id="content">
+			
+			<Label id="earlyOrLateLbl"/>
+
+			<View id="earlyOrLateReasons"/>
+
+		</View>
+
+	</Window>
+</Alloy>

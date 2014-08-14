@@ -1,0 +1,15 @@
+<Alloy>
+	<View id="managerOptionsReports" class="content">
+		<View id="contentHeader">
+			<!-- <Button id="back" platform="ios">
+                <ImageView class="buttonIcon" image="/images/icons/1_navigation_previous_item.png" />
+                <Label id="backLbl" class="buttonLabel">Back</Label>
+            </Button>
+            <Button id="back" title="Back" platform="android" /> -->
+
+			<Label id="managerReportsHeaderTxt" text="Reports"/>
+			
+		</View>
+		<View id="reportsWebViewWrap"/>
+	</View>
+</Alloy>

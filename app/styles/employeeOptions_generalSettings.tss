@@ -1,0 +1,135 @@
+"#generalSettings":{},
+"#contentHeader":{
+	top: 0,
+	height: '60dp',
+	width: '100%',
+	backgroundColor: 'transparent',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#f0f0f0'],
+        backFillStart: false
+    },
+    borderWidth: 1,
+	borderColor: '#e4e4e4'
+},
+"#emplSettingsHeader":{
+	font: {
+    	fontSize: '24dp',
+    	fontWeight: 'bold'
+    },
+    color: '#AEAEAE'
+},
+"Button[platform=ios]": {
+	borderWidth: 0
+},
+"#back":{
+	width: '160dp',
+	left: 0
+},
+"#back[platform=android]":{
+	image: "/images/icons/back-32-blue.png",
+	backgroundColor: 'transparent'
+},
+"#backLbl":{
+	color: '#000',
+	font: {
+		fontSize: '20dp'
+	},
+	color: "#34AADC"
+},
+"#settingsTableWrap":{
+	top: '80dp',
+	width: '90%',
+	layout: 'vertical',
+	left: '5%'
+},
+"#cellCarriersTableWrap":{
+	top: '80dp',
+	height: '100%',
+	width: '90%',
+	layout: 'vertical',
+	left: '100%'
+},
+"TableView":{
+	top: '10dp',
+	bottom: '30dp',
+	width: '100%',
+	borderWidth: 1,
+	borderColor: "#e4e4e4",
+	borderRadius: 10,
+	rowHeight: '48dp',
+	scrollable: false,
+	separatorColor: "#e4e4e4"
+},
+"TableViewRow":{
+	selectedBackgroundColor: '#34AADC',
+	height: '44dp'
+},
+"#badgeId":{
+	selectedBackgroundColor: '#fff',
+	selectedColor: '#000'
+},
+"#cellCarriers":{
+	scrollable: true
+},
+"#employeeSettings":{
+	height: '179dp'
+},
+"#employeeSettings[platform=ios]":{
+	height: '190dp'
+},
+".settingName":{
+	left: '10dp'
+},
+".settingValue":{
+	right: '40dp',
+	color: '#00a6d5'
+},
+"#badgeIdLbl":{
+	color: '#666'
+},
+".editArrow":{
+	right: '5dp'
+},
+".settingTxtField":{
+	right: '5%',
+	height: '44dp',
+	width: '60%',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT
+},
+"#emailTxtField":{
+	keyboardType: Ti.UI.KEYBOARD_EMAIL
+},
+"#cellPhoneNumTxtField":{
+	keyboardType: Ti.UI.KEYBOARD_PHONE_PAD
+},
+"#languagePrefs":{
+	height: '134'
+},
+"#languagePrefs[platform=ios]":{
+	height: '140'
+},
+".languagePrefsLbl":{
+	left: 10,
+	font: {
+		fontSize: '18dp'
+	},
+	color: '#333'
+}
+".langName":{
+	left: 10
+},
+".langCheck":{
+	right: 15
+},
+".emplOptsTblHeaders":{
+	left: '10dp',
+	width: '100%',
+	font:{
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}

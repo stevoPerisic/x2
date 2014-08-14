@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E1027A35-C6D9-435A-B94A-708B84CD1964</string>
+	<key>IDESourceControlProjectName</key>
+	<string>faceDetection</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>96A10694-6C84-4585-88C2-5E868CD161E4</key>
+		<string>https://bitbucket.org/sperisic/cloudclock_v2_alloy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>XCode/faceDetection/faceDetection.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>96A10694-6C84-4585-88C2-5E868CD161E4</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/sperisic/cloudclock_v2_alloy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>96A10694-6C84-4585-88C2-5E868CD161E4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>96A10694-6C84-4585-88C2-5E868CD161E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Cloud Clock V2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

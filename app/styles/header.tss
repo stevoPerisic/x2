@@ -1,0 +1,56 @@
+//**************************************************
+//*******	HEADER STYLES	****************
+//**************************************************
+"#header": {
+	top: 0,
+	width: Ti.UI.Fill,
+	height: '8%',
+	backgroundColor: '#f2f2f2',
+	borderWidth: 1,
+	borderColor: '#dadada',
+	layout: 'composite',
+	horizontalWrap: false
+},
+"#headerLogo":{
+	top: 0,
+	left:0,
+	backgroundColor: "#fff",
+	width: '200dp'
+},
+"#btnWrap":{
+	right: 0,
+	width: Ti.UI.SIZE,
+	layout: 'horizontal',
+}
+"Button": {
+	top: '5%',
+	height: '90%',
+	right: 5,
+	borderWidth: 1,
+	//borderColor: '#e4e4e4',
+	//color: '#333',
+	//backgroundColor: '#f2f2f2',
+	width: Ti.UI.SIZE,
+	backgroundColor: '#fff',
+	borderColor: '#34aadc',
+	borderRadius: 10
+},
+"Button[platform=ios]":{
+	borderColor: '#34aadc',
+	color: '#333'
+},
+".buttonLabel[platform=ios]":{
+	right: '16dp',
+	width: Ti.UI.SIZE
+},
+"#exit[platform=android]":{
+	image: "/images/icons/start-over-32-blk.png"
+}
+"#helpButton[platform=ios]":{
+	// borderWidth:0
+	backgroundColor: "#FFF985"
+},
+"#helpButton[platform=android]":{
+	image: "/images/icons/help-32-blk.png"
+}
+

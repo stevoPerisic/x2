@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+description: Receipt Printer Module
+author: Cliff Jacobson
+license: Proprietary 
+copyright: Copyright (c) 2014 by Peoplenet Corporation
+
+
+# these should not be edited
+name: receiptprinter
+moduleid: com.peoplenet.receiptprinter
+guid: 77b1d88b-d379-4db5-bdc6-42ec0f2c7ea7
+platform: iphone
+minsdk: 3.2.2.GA

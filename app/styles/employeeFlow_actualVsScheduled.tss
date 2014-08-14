@@ -1,0 +1,57 @@
+//******************************************
+
+"#actualVsScheduled":{
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true
+},
+"#content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL
+},
+"#actualVsScheduledLbl":{
+	top: '20dp',
+	font: {
+		fontSize: '30dp'
+	}
+},
+"#chooseAShift":{
+	top: '120dp',
+	width: '100%',
+	height: '600dp',
+	left: 0,
+	layout: 'vertical'
+},
+"#actualTimeWrap":{
+	top: '120dp',
+	width: '50%',
+	right: 0,
+	layout: 'vertical'
+},
+"#scheduledTimeWrap":{
+	top: '120dp',
+	width: '50%',
+	left: 0,
+	layout: 'vertical'
+},
+"#actualTime":{
+	top: '20dp',
+	width: '60%',
+	height: '100dp',
+	backgroundColor: '#fff',
+	borderRadius: 5,
+	borderWidth: '1dp',
+	borderColor: "#e4e4e4"
+},
+"#actualTimeLbl":{
+	width: '100%',
+	height: '100%',
+	backgroundColor: '#fff',
+	font: {
+		fontSize: '22dp',
+		fontWeight: 'bold'
+	},
+	color: '#333',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+}

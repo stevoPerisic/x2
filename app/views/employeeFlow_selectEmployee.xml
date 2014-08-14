@@ -1,0 +1,28 @@
+<Alloy>
+	<Window id="selectEmployeeWin">
+
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+
+		<Require id="header" src="header"/>
+
+		<View id="content">
+
+			<View id="selectEmployeeWrap">
+				<View id="notListedSidebar">
+					<Button id="notListed" platform="ios">
+		                <Label id="notListedLabel" class="buttonLabel"/>
+		            </Button>
+
+		            <Button id="notListed" title="I'm not listed" platform="android" />
+				</View>
+
+				<View id="selectEmployee" class="content">
+					<Label id="confirmIdentity" />
+				</View>
+			</View>
+
+		</View>
+
+	</Window>
+	
+</Alloy>

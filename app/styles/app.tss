@@ -1,0 +1,58 @@
+//**************************************************
+//*******	GLOBAL STYLES	****************
+//**************************************************
+".container": {
+	backgroundColor:"#fcfcfc",
+	fullscreen: false,
+	navBarHidden: false,
+	statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
+	top: 20
+},
+".content":{
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL
+},
+"Label":{
+	font:{
+		fontFamily:'Helvetica',
+        fontSize: '18dp',
+        fontStyle: 'normal',
+        fontWeight: 'normal'
+	},
+	color: "#333"
+},
+"Button":{
+	height: '60dp',
+	font:{
+		fontSize: '20dp'
+	},
+	color: '#000'
+},
+"Button[platform=ios]":{
+    borderColor: '#1c1d1c',
+    color: '#ffffff',
+    backgroundImage: 'none'
+},
+".buttonIcon":{
+	left: 10
+},
+".buttonLabel":{
+	left: 60,
+	color: '#333'
+},
+"#activityIndicator":{
+	top: '25%',
+	left: '20%',
+	height: '50%',
+	width: '60%',
+	zIndex: 1,
+	backgroundColor: '#000',
+	color: '#fff',
+	opacity: '0.7',
+	borderRadius: 20,
+	font: {
+		fontSize: '28dp'
+	}
+},
+"#activityIndicator[platform=ios]":{style: Titanium.UI.iPhone.ActivityIndicatorStyle.BIG}
+"#activityIndicator[platform=android]":{style: Titanium.UI.ActivityIndicatorStyle.BIG}

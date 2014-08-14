@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="actualVsScheduled">
+		<ActivityIndicator id="activityIndicator" />
+		<Require id="header" src="header"/>
+
+		<View id="content">
+			<Label id="actualVsScheduledLbl"/>
+
+			<View id="scheduledTimeWrap"></View>
+
+			<View id="actualTimeWrap">
+				<View id="actualTime">
+					<Label id="actualTimeLbl" shiftID="0" shiftOrder="0" overrideFlag="1"/>
+				</View>
+			</View>
+
+		</View>
+
+	</Window>
+</Alloy>

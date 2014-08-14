@@ -1,0 +1,49 @@
+<Alloy>
+	<Window id="clockInOut">
+
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+
+		<Require id="header" src="header"/>
+
+		<View id="content">
+
+			<View id="employeePicBackground">
+				<View id="employeePicWrap" >
+					<ImageView id="employeePic"/>
+					<Label id="name" />
+					<Label id="pinNo" />
+				</View>
+
+				<Button id="notMe" platform="ios">
+	                <Label id="notMeLabel" class="buttonLabel"/>
+	            </Button>
+
+	            <Button id="notMe" title="This is not me" platform="android" />
+			</View>
+
+			<View id="clockAndButtons">
+				<View id="clock">
+			        <Label id="time"/>
+			        <Label id="date"/>
+			    </View>
+
+	            <View id="clockIn" customAttr="clockIn">
+	                <Label id="clockInLbl" class="buttonLabel" customAttr="clockIn"/>
+	                <Label id="lastTimeInLbl" class="timeLabel" customAttr="clockIn"/>
+	            </View>
+
+	            <View id="clockOut" customAttr="clockOut">
+	                <Label id="clockOutLbl" class="buttonLabel" customAttr="clockOut"/>
+	                <Label id="lastTimeOutLbl" class="timeLabel" customAttr="clockOut"/>
+	            </View>
+
+			</View>
+
+		</View>
+
+		<Require id="footer" src="footer"/>
+
+	</Window>
+</Alloy>
+
+

@@ -1,0 +1,78 @@
+"#notifications":{},
+"#contentHeader":{
+	top: 0,
+	height: '60dp',
+	width: '100%',
+	backgroundColor: 'transparent',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#f0f0f0'],
+        backFillStart: false
+    },
+    borderWidth: 1,
+	borderColor: '#e4e4e4'
+},
+"#notifications_header":{
+	font: {
+    	fontSize: '24dp',
+    	fontWeight: 'bold'
+    },
+    color: '#AEAEAE'
+},
+"#notificationsSettingsTblWrap":{
+	top: '80dp',
+	width: '90%',
+	layout: 'vertical'
+},
+"TableView":{
+	top: '10dp',
+	bottom: '30dp',
+	width: '100%',
+	borderWidth: 1,
+	borderColor: "#e4e4e4",
+	borderRadius: 10,
+	rowHeight: '48dp',
+	scrollable: false,
+	separatorColor: '#e4e4e4'
+},
+"TableViewRow":{
+	backgroundFocusedColor: "#fff",
+	backgroundImage: 'none',
+	bacgroundSelectedColor: '#fff',
+	selectedBackgroundColor: '#34AADC',
+	focusedBackgroundColor: '#34AADC',
+	height: '44dp'
+},
+"#notifType[platform=ios]":{
+	height: '144dp'
+},
+"#notifType[platform=android]":{
+	height: '134dp'
+},
+"#notifDay[platform=ios]":{
+	height: '336dp'
+},
+"#notifDay[platform=android]":{
+	height: '314dp'
+},
+".notfDayLbl":{
+	left: 10
+},
+".notifTableLbl":{left: "10dp", font:{fontSize: '18dp', fontWeight: 'normal'}},
+".emplOptsTblHeaders":{
+	left: '10dp',
+	width: '100%',
+	font:{
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
+
+
+
+
+
+

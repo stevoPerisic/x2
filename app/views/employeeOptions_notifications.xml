@@ -1,0 +1,48 @@
+<Alloy>
+	<View id="notifications" class="content">
+		<View id="contentHeader">
+			<Label id="notifications_header"/>
+		</View>
+		<View id="notificationsSettingsTblWrap">
+			<Label id="deliveryPref" class="emplOptsTblHeaders"/>
+
+			<TableView id="notifType">
+				<TableViewRow id="Email">
+					<Label id="EmailLbl" class="notfDayLbl"/>
+				</TableViewRow>
+				<TableViewRow id="Text">
+					<Label id="TextLbl" class="notfDayLbl"/>
+				</TableViewRow>
+				<TableViewRow id="both">
+					<Label id="bothLbl" class="notfDayLbl"/>
+				</TableViewRow>
+			</TableView>
+
+			<Label id="deliveryDay" class="emplOptsTblHeaders"/>
+
+			<TableView id="notifDay">
+				<TableViewRow id="sunday">
+					<Label id="sundayLbl" class="notfDayLbl"/>
+				</TableViewRow>
+				<TableViewRow id="monday">
+					<Label id="mondayLbl" class="notfDayLbl"/>
+				</TableViewRow>
+				<TableViewRow id="tuesday">
+					<Label id="tuesdayLbl" class="notfDayLbl"/>
+				</TableViewRow>
+				<TableViewRow id="wednesday">
+					<Label id="wednesdayLbl" class="notfDayLbl"/>
+				</TableViewRow>
+				<TableViewRow id="thursday">
+					<Label id="thursdayLbl" class="notfDayLbl"/>
+				</TableViewRow>
+				<TableViewRow id="friday">
+					<Label id="fridayLbl" class="notfDayLbl"/>
+				</TableViewRow>
+				<TableViewRow id="saturday">
+					<Label id="saturdayLbl" class="notfDayLbl"/>
+				</TableViewRow>
+			</TableView>
+		</View>
+	</View>
+</Alloy>

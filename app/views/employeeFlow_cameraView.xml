@@ -1,0 +1,13 @@
+<Alloy>
+	<Window id="cameraWindow">
+		<ActivityIndicator id="activityIndicator" />
+		<Require id="header" src="header"/>
+
+		<Label id="instructions" />
+
+		<View id="cameraView"/>
+
+		<!-- <Button id="takePictureBtn"></Button> -->
+
+	</Window>
+</Alloy>

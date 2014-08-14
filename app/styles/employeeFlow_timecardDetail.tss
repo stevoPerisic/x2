@@ -1,0 +1,144 @@
+"#timecardDetail":{
+	layout: 'composite',
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true,
+},
+".content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+	layout: 'vertical',
+	horizontalWrap: false
+},
+"#contentHeader":{
+	top: 0,
+	height: '60dp',
+	width: '100%',
+	backgroundColor: 'transparent',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#f0f0f0'],
+        backFillStart: false
+    },
+    borderWidth: 1,
+	borderColor: '#e4e4e4'
+},
+"Button[platform=ios]": {
+	borderWidth: 0
+},
+"#back":{
+	width: '160dp',
+	left: 0
+},
+"#back[platform=android]":{
+	image: "/images/icons/back-32-blue.png"
+},
+"#backBtnLbl":{
+	color: '#34AADC'
+},
+"#weekNavBtns":{
+	width: '301dp',
+	height: '40dp',
+	right: '35%',
+	borderWidth: 1,
+	borderColor: '#e4e4e4',
+	borderRadius: 10,
+	layout: 'horizontal',
+	backgroundColor: "#fff"
+},
+"#verticalLine":{
+	top: 0,
+	height: '100%',
+	width: '1dp',
+	backgroundColor: "#e4e4e4"
+},
+"#previousWeek":{
+	width: '150dp',
+	height: '100%'
+},
+"#previousWeek[platform=android]":{
+	backgroundColor: 'transparent',
+	borderWidth:0
+}
+"#nextWeek":{
+	width: '150dp',
+	height: '100%'
+},
+"#nextWeek[platform=android]":{
+	backgroundColor: 'transparent',
+	borderWidth:0
+}
+".weekNavLbl":{
+	backgroundColor: 'transparent',
+	color: '#000'
+},
+".disabled":{
+	backgroundColor: "#fcfcfc",
+	color: '#e4e4e4'
+}
+".labelDisabled[platform=ios]":{
+	backgroundColor: "transparent",
+	color: '#f2f2f2'
+},
+"#commIconsWrap":{
+	width: Ti.UI.SIZE,
+	right: 0,
+	top: '10dp',
+	height: '40dp',
+	layout: 'horizontal'
+},
+".commIcons":{
+	right: '10dp',
+	height: '40dp',
+	width: Ti.UI.SIZE,
+	backgroundColor: '#fff',
+	borderColor: '#34aadc',
+	borderRadius: 10,
+	layout: 'horizontal'
+},
+".commIcons_icon":{
+	top: '10dp',
+	left: '10dp',
+	width: '24dp',
+	height: '24dp'
+},
+".commIcons_text":{
+	top: '10dp',
+	left: '10dp',
+	right: '10dp',
+	width: Ti.UI.SIZE,
+	color: '#34aadc',
+},
+"#timecardWrap":{
+	top: 0,
+	layout: 'composite',
+	backgroundColor:"#fcfcfc",
+},
+"#timecardWrapHeader":{
+	top: '5dp',
+	height: '40dp',
+	font:{
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+},
+"#underline":{
+	top: '45dp',
+	left: '20%',
+	height: '1dp',
+	width: '60%',
+	backgroundColor: '#e4e4e4'
+},
+"#timecardDataNA":{
+	backgroundColor: "#fcfcfc",
+	top: '60dp'
+},
+"#errorView":{
+	backgroundColor: "#fcfcfc",
+	top: '60dp',
+	height: '400dp'
+}
+

@@ -1,0 +1,230 @@
+"#content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+},
+"#departmentSelection":{
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true,
+}
+
+
+// -------- OPEN DEPARTMENT
+
+"#openDepts":{
+	layout: 'horizontal',
+	visible: false // hide right away we will show based on settings
+}
+"#sidebar": {
+	width: '30%',
+	layout: 'vertical',
+	borderWidth: 1,
+	borderColor: '#e4e4e4',
+	backgroundColor: '#fcfcfc'
+},
+"#sidebarHeader": {
+	top: -1,
+	height: '60dp',
+	width: '100%',
+	backgroundColor: 'transparent',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#f0f0f0'],
+        backFillStart: false
+    },
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: {
+    	fontSize: '24dp',
+    	fontWeight: 'bold'
+    },
+    color: '#AEAEAE',
+    borderWidth: 1,
+	borderColor: '#e4e4e4'
+},
+"#sideBarDeptBadgeWrap":{
+	left: 0,
+	height: '630dp',
+	layout: 'vertical',
+	scrollType: 'vertical',
+	contentHeight: '1700dp',
+	showHorizontalScrollIndicator: false,
+	showVerticalScrollIndicator: true,
+	backgroundColor: '#f0f0f0'
+},
+"#sideBarBadgeHolder":{
+	layout:"vertical",
+	backgroundColor: "#f0f0f0", //"#fcfcfc",
+	top: 0,
+	height:"1700dp",
+	width:"100%"
+},
+".previousDepts":{
+	top: 0,
+	height: '60dp',
+	width: Ti.UI.Fill,
+	borderWidth: 1,
+	borderColor: '#e4e4e4'
+}
+"#enterDepartment":{
+	width: '70%',
+	layout: 'vertical',
+},
+"#pinPadWrap":{
+	width: '80%'
+},
+"#contentHeader":{
+	top: 0,
+	height: '60dp',
+	width: '100%',
+	backgroundColor: 'transparent',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#f0f0f0'],
+        backFillStart: false
+    },
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font: {
+    	fontSize: '24dp',
+    	fontWeight: 'bold'
+    },
+    color: '#AEAEAE',
+    borderWidth: 1,
+	borderColor: '#e4e4e4'
+}
+"#openDepartmentInstructions": {
+	top: '40dp',
+	width: Ti.UI.Fill,
+	font:{
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#txtFieldBtnWrap": {
+	top: '30dp',
+	height: '60dp',
+	width: '484dp',
+	layout: 'horizontal'
+},
+"#openDepartmentTxtField":{
+	top: 0,
+	left: 0,
+	height: '60dp',
+	width: '400dp',
+	color: '#333',
+	borderWidth: 1,
+	borderColor: '#e4e4e4',
+	borderRadius: 10,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: '30dp'
+	},
+	keyboardType: Ti.UI.KEYBOARD_NUMBER_PAD,
+	//focusable: true,
+	clearOnEdit: true
+},
+".buttonIcon":{
+	left: 5
+}
+"#submitOpenDept": {
+	width: '60dp',
+	height: '60dp',
+	left: '20dp',
+	backgroundColor: '#62bb47',
+	color: '#fff',
+	borderRadius: 10,
+	borderColor: '#62bb47'
+},
+"#submitOpenDept[platform=android]":{
+	image: "/images/icons/accept-48-white.png"
+}
+
+
+// ---- SELECT DEPARTMENT BADGE
+
+"#departments": {
+	top: 0,
+	layout: 'vertical',
+	width: '100%',
+	visible: false
+},
+"#chooseDepartmentInstructions": {
+	top: '40dp',
+	font: {
+		fontSize: '25dp'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor: '#fcfcfc',
+},
+"#deptBadgeWrap":{
+	left: 0,
+	height: '600dp',
+	layout: 'horizontal',
+	scrollType: 'horizontal',
+	contentWidth: '1700dp',
+	showHorizontalScrollIndicator: true,
+	showVerticalScrollIndicator: false,
+	backgroundColor: '#fcfcfc'
+},
+"#badgeHolder":{
+	layout:"horizontal",
+	backgroundColor:"#fcfcfc",
+	top: 10,
+	height:"580dp",
+	width:"1700dp"
+}
+// --- the DEPARTMENT BADGE - probably place this in the actual controller when we create these badges
+
+".selectDepartmentBadge":{
+	top: '20dp',
+	width: '60%',
+	height: '100dp',
+	backgroundColor: '#fff',
+	borderRadius: 5,
+	borderWidth: '1dp',
+	borderColor: "#e4e4e4"
+},
+".selectDepartmentBadgeLabel":{
+	width: '100%',
+	font: {
+		fontSize: '22dp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+}
+
+// NEW OPEN DEPARTMENT SCREEN
+"#badgeWrap":{
+	left: 0,
+	height: '630dp',
+	layout: 'vertical',
+	backgroundColor: '#f0f0f0'
+},
+"#mostUsed":{
+	top: 0,
+	height: '90dp'
+}
+"#lastUsed":{
+	top: 0,
+	height: '90dp'
+}
+"#searchResults":{
+	top: 0,
+	height: Ti.UI.SIZE,// '390dp',
+	layout: 'vertical'
+}
+".badgeWrapLbl":{
+	top: 5,
+	width:'90%',
+	font:{
+		fontWeight: 'bold',
+		fontSize: '20dp'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+}
+

@@ -1,0 +1,72 @@
+//******************************************
+
+"#missedBreak":{
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true
+},
+"#content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL
+},
+"#contentHeader":{
+	top: 0,
+	height: '60dp',
+	width: '100%',
+	backgroundColor: 'transparent',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#f0f0f0'],
+        backFillStart: false
+    },
+    borderWidth: 1,
+	borderColor: '#e4e4e4'
+},
+"#missedBreakTitle":{
+	font: {
+    	fontSize: '24dp',
+    	fontWeight: 'bold'
+    },
+    color: '#AEAEAE'
+},
+"#missedBreakLbl":{
+	top: '80dp',
+	font: {
+		fontSize: '20dp'
+	}
+},
+"#missedBreakReasons":{
+	top: '140dp',
+	width: '100%',
+	height: '600dp',
+	left: 0,
+	layout: 'vertical'
+}
+"#buttonsWrap":{
+	width: '50%',
+	layout: 'vertical'
+}
+"#pinPadWrap":{
+	width: '50%',
+	height: '100%'
+},
+"#submitBreakHours": {
+	top: '80%',
+	width: '60%',
+	height: '60dp',
+	backgroundColor: '#62bb47',
+	color: '#fff',
+	borderRadius: 10,
+	borderColor: '#62bb47'
+},
+"#submitBreakHoursTxt":{
+	width: Ti.UI.SIZE,
+	color: '#fff',
+	font: {
+		fontWeight: 'bold',
+		fontSize: '24dp'
+	}
+},

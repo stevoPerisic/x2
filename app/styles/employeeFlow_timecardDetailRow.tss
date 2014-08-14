@@ -1,0 +1,17 @@
+"TableViewRow":{
+	borderColor: 'red',
+	borderWidth: 1,
+	backgroundColor: '#fcfcfc'
+},
+"#row":{
+	height: '44dp'
+},
+"#day":{
+	left: '10dp'
+},
+"#date":{
+	left: '80dp'
+},
+"#hours":{
+	right: '15dp'
+}

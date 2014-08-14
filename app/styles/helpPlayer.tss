@@ -1,0 +1,60 @@
+//******************	help player
+"#helpPlayer":{
+	top: '80dp',
+	right: -400,
+	width: '300dp',
+	height: '200dp',
+	backgroundColor: "#fff",
+	borderWidth: 1,
+	borderColor: "#e4e4e4",
+	borderRadius: 10,
+	layout: 'vertical'
+},
+"#helpPlayer[platform=android]":{
+	right: 20,
+},
+"#helpText":{
+	top: '10dp',
+	width: '90%',
+	height: '100dp'
+},
+"#buttonWrap":{
+	top: '20dp',
+	width: '90%',
+	layout: 'horizontal'
+},
+"Button": {
+	left: 10,
+	right: 5,
+	height: '44dp',
+	width: '44dp',
+	borderColor: '#e4e4e4',
+	color: '#333',
+	borderRadius: '22%'
+},
+"Button[platform=ios]":{
+	left: 10,
+	right: 5,
+	height: '44dp',
+	width: '44dp',
+	borderColor: '#e4e4e4',
+	color: '#333',
+	borderRadius: '22%'
+},
+"#stopBtn[platform=android]":{
+	image: "/images/icons/9_av_stop.png",
+	backgroundColor: 'transparent',
+	width: '50dp'
+},
+"#playBtn[platform=android]":{
+	image: "/images/icons/9_av_play.png",
+	backgroundColor: 'transparent',
+	width: '50dp'
+},
+".helpPlayerBtnImg":{ width: '28dp' },
+
+"#closeHelp":{
+	borderWidth: 0,
+	width: '100dp',
+	backgroundColor: 'transparent'
+}

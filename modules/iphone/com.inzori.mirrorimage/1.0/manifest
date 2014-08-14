@@ -1,0 +1,19 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: Simple module that allows image horizontal flipping (Mirror).
+Useful when taking pictures with the frontal camera.
+author: Inzori Inc.
+license: Inzori commercial type.
+copyright: 2012 (c) Inzori Inc.
+
+
+# these should not be edited
+name: mirrorimage
+moduleid: com.inzori.mirrorimage
+guid: f5bad258-a629-4dbb-9716-7b2997536c81
+platform: iphone
+minsdk: 1.8.2

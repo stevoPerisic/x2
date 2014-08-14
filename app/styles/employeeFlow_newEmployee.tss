@@ -1,0 +1,70 @@
+"#content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+}
+".content":{
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+	layout: 'vertical'
+},
+"#newEmployee":{
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true,
+},
+"#instructions": {
+	top: '40dp',
+	width: Ti.UI.Fill,
+	font:{
+		fontWeight: 'bold',
+		fontSize: '26dp'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+},
+"#txtFieldBtnWrap": {
+	top: '20dp',
+	height: '60dp',
+	width: '60%',
+	layout: 'horizontal'
+},
+"#newEmployeeTxtField":{
+	top: 0,
+	left: 0,
+	height: '60dp',
+	width: '60%',
+	color: '#333',
+	borderWidth: 1,
+	borderColor: '#e4e4e4',
+	borderRadius: 10,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: '30dp'
+	},
+	keyboardType: Ti.UI.KEYBOARD_DEFAULT,
+	clearOnEdit: true,
+	autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_ALL
+},
+".buttonIcon":{
+	left: 5
+}
+"#submitNewEmployee": {
+	width: '35%',
+	height: '60dp',
+	left: '5%',
+	backgroundColor: '#62bb47',
+	color: '#fff',
+	borderRadius: 10,
+	borderColor: '#62bb47'
+},
+"#submitNewEmployeeTxt":{
+	width: Ti.UI.SIZE,
+	color: '#fff',
+	font: {
+		fontWeight: 'bold',
+		fontSize: '24dp'
+	}
+},
+"#submitNewEmployee[platform=android]":{
+	image: "/images/icons/accept-48-white.png"
+}

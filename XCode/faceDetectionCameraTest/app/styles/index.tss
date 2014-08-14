@@ -1,0 +1,46 @@
+"#cameraView" : {
+	top : 40,
+	left : 10,
+	width : '400',
+	height : '400',
+	backgroundColor : 'green'
+}
+
+"#pictureView" : {
+	top : 40,
+	right : 10,
+	height : '400',
+	width : '400',
+	backgroundColor : 'blue'
+}
+
+"Button" : {
+	font : {
+		fontSize : 32
+	}
+}
+
+"#startCapture" : {
+	title : 'Start Capture',
+	bottom : 20,
+	left : 40
+}
+
+"#stopCapture" : {
+	title : 'Stop Capture',
+	bottom : 20,
+	right : 40
+}
+
+"#takePicture" : {
+	title : 'Take Picture',
+	bottom : 20
+}
+
+"#croppedImagesView" : {
+	bottom : 100,
+	height : 200,
+	width : '80%',
+	backgroundColor : 'yellow',
+	layout : 'horizontal'
+}

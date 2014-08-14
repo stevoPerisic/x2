@@ -1,0 +1,28 @@
+<Alloy>
+	<Window id="missedBreak">
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+		<Require id="header" src="header"/>
+
+		<View id="content">
+			
+			<View id="contentHeader">
+				<Label id="missedBreakTitle"/>
+			</View>
+			
+			<Label id="missedBreakLbl"/>
+
+			<View id="missedBreakReasons">
+				<View id="buttonsWrap"/>
+				<View id="pinPadWrap">
+					<Widget id="pinPad" src="pinPad" />
+
+					 <Button id="submitBreakHours" platform="ios">
+						<Label id="submitBreakHoursTxt"/>
+		            </Button>
+				</View>
+			</View>
+
+		</View>
+
+	</Window>
+</Alloy>

@@ -1,0 +1,7 @@
+<Alloy>
+	<TableViewRow id="row">
+		<Label id="day"/>
+		<Label id="date"/>
+		<Label id="hours"/>
+	</TableViewRow>
+</Alloy>

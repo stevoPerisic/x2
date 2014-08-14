@@ -1,0 +1,45 @@
+//**************************************************
+//*******	FOOTER STYLES	****************
+//**************************************************
+"#footer": {
+	bottom: 0,
+	width: Ti.UI.Fill,
+	height: '8%',
+	backgroundColor: '#333',
+	borderWidth: 1,
+	borderColor: '#dadada'
+},
+"#footerLogo":{
+	left:"10dp",
+	height: '40dp'
+},
+"#newEmployee": {
+	//top: 0,
+	//height: '44dp',
+	width: '300dp',
+	backgroundColor: '#333',
+	borderColor: '#666',
+	//borderRadius: 10,
+	color: '#dadada'
+},
+"#newEmployee[platform=android]":{
+	image: "/images/icons/new-employee-inactive-32-white.png"
+},
+"#employeeOptions": {
+	//top: 0,
+	//height: '44dp',
+	width: '300dp',
+	backgroundColor: '#333',
+	borderColor: '#666',
+	//borderRadius: 10,
+	color: '#dadada'
+},
+"#employeeOptions[platform=android]":{
+	image: "/images/icons/more-options-32-white.png"
+},
+".buttonLabel":{
+	color: '#dadada',
+	width: '65%',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	zIndex: 2
+}

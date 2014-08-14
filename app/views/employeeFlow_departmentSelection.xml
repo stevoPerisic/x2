@@ -1,0 +1,60 @@
+<Alloy>
+	<Window id="departmentSelection">
+
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+
+		<Require id="header" src="header"/>
+
+		<View id="content">
+
+			<!-- OPEN DEPARTMENT -->
+			<View id="openDepts">
+				<View id="sidebar">
+					<!-- PERHAPS CHANGE THIS TO A LIST VIEW? -->
+					<Label id="sidebarHeader"/>
+
+					<View id="badgeWrap">
+						
+						<Label id="mostUsedLbl" text="Most Used" class="badgeWrapLbl"/>
+						<View id="mostUsed"/>
+
+						<Label id="lastUsedLbl" text="Last Used" class="badgeWrapLbl"/>
+						<View id="lastUsed"/>
+
+						<Label text="Search Results" class="badgeWrapLbl"/>
+						<!-- <View id="searchResults"/> -->
+						<ScrollView id="sideBarDeptBadgeWrap">
+							<View id="sideBarBadgeHolder"/>
+						</ScrollView>
+					</View>
+
+					<!-- <ScrollView id="sideBarDeptBadgeWrap">
+						<View id="sideBarBadgeHolder"/>
+					</ScrollView> -->
+
+				</View>
+
+				<View id="enterDepartment">
+					<Label id="contentHeader"/>
+
+					<View id="pinPadWrap">
+						<Widget id="pinPad" src="pinPad" />
+					</View>
+				</View>
+			</View>
+			<!-- END OPEN DEPARTMENT -->
+
+			<!-- SELECT DEPARTMENT BADGE -->
+			<View id="departments">
+				<Label id="chooseDepartmentInstructions" />
+
+				<ScrollView id="deptBadgeWrap">
+		            <View id="badgeHolder"/>
+		        </ScrollView>
+			</View>
+			<!-- END -->
+
+		</View>
+
+	</Window>
+</Alloy>

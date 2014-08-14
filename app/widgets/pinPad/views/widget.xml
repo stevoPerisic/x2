@@ -1,0 +1,39 @@
+<!-- *****************************************
+//*********	Cloud Clock Widgets ***********
+//*****************************************
+//*******	Pin Pad Widget ****************
+//***************************************** -->
+<Alloy>
+	<!-- PIN ENTRY - TEXT BOX AND KEYBOARD -->
+    <View id="pinPad">
+        <!-- This text field should be configurable based on what data we are entering
+                could be terminalID, manager PIN or employee PIN -->
+        <TextField id="pinPadTxtField" editable="false"></TextField>
+
+        <Button class="pinPadButton firstRow firstCol">1</Button>
+        <Button class="pinPadButton firstRow secondCol">2</Button>
+        <Button class="pinPadButton firstRow thirdCol">3</Button>
+
+        <Button class="pinPadButton secondRow firstCol">4</Button>
+        <Button class="pinPadButton secondRow secondCol">5</Button>
+        <Button class="pinPadButton secondRow thirdCol">6</Button>
+
+        <Button class="pinPadButton thirdRow firstCol">7</Button>
+        <Button class="pinPadButton thirdRow secondCol">8</Button>
+        <Button class="pinPadButton thirdRow thirdCol">9</Button>
+
+        <!-- ios delete btn -->
+        <Button id="deleteBtn" class="pinPadButton fourthRow firstCol" platform="ios">
+            <ImageView image='/images/icons/backspace-48-blk.png'/>
+        </Button>
+
+        <!-- android delete button -->
+        <Button id="deleteBtn" class="pinPadButton fourthRow firstCol" platform="android"/>
+
+        <Button class="pinPadButton fourthRow secondCol">0</Button>
+        <!--    REMEBER TO CHANGE THIS BACK!!!!    -->
+        <Button id="disabledButton" class="pinPadButton fourthRow thirdCol" enabled="false"></Button>
+        <!-- <Button id="MAINT" class="pinPadButton fourthRow thirdCol" enabled="true" >MAINT</Button> -->
+
+    </View><!-- END PIN PAD -->
+</Alloy>

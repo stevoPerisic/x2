@@ -1,0 +1,63 @@
+"#content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+}
+".content":{
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+	layout: 'vertical'
+},
+"#selectEmployeeWin":{
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true,
+},
+"#selectEmployeeWrap":{
+	width: '100%',
+	layout: 'horizontal'
+},
+"#notListedSidebar":{
+	width: '33%',
+	height: '100%',
+	backgroundColor: '#e4e4e4',
+},
+"#notListed":{
+	top: '40dp',
+	width: '80%',
+	borderRadius: 10,
+	borderColor: '#ccc',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#e4e4e4'],
+        backFillStart: false
+    },
+	color: "#fff",
+},
+"#notListed[platform=android]":{
+	color: '#000'
+},
+"#notListedLabel":{
+	left: 0,
+	color: '#000',
+	width: '100%',
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#selectEmployee": {
+	width: '66%',
+	layout: 'vertical',
+},
+"#confirmIdentity": {
+	top: '40dp',
+	font: {
+		fontSize: '25dp'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	backgroundColor: '#fcfcfc',
+},

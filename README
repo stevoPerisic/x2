@@ -1,0 +1,18 @@
+FOR THE CAMERA - THE XCODE FOLDER IS IGNORED IN THIS BRANCH
+
+Cloud Clock by PeopleNet
+
+This is version 2 of the Cloud Clock. 
+
+The master branch, as of 12/09/2013 holds the cut-off for version 2, everything else that gets added to that branch are bug fixes, new version 2.0.1 will be starting as of 12/10/2013.
+
+Android branch was merged back into the development branch and deleted becuse there was no need to keep it.
+
+If there is a bug or a hotfix that needs to get done, checkout the master branch and start a new branch with the name of the bug-fix or a hot-fix than merge it back into the master for publishing.
+
+
+CHANGELOG
+
+12/09/2013
+- Merged the android branch into development
+- cleaning up merge issues 

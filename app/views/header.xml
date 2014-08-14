@@ -1,0 +1,21 @@
+<!-- **************************************************
+******* HEADER VIEW    ****************
+************************************************** -->
+<Alloy>
+	<View id="header">
+            <ImageView id="headerLogo" image="/images/powered_by@2x.png"/>
+            <View id="btnWrap">
+                <Button id="helpButton" platform="ios">
+                    <ImageView class="buttonIcon" image="/images/icons/help-32-blk.png" />
+                    <Label id="helpBtnLbl" class="buttonLabel">Help</Label>
+                </Button>
+                <Button id="helpButton" title="Help" viewNo="" employeeLang="" platform="android" />
+
+                <Button id="exit" platform="ios">
+                    <ImageView class="buttonIcon" image="/images/icons/start-over-32-blk.png" />
+                    <Label id="exitLbl" class="buttonLabel"/>
+                </Button>
+                <Button id="exit" title="Start Over" platform="android" />
+            </View>
+        </View>
+</Alloy>

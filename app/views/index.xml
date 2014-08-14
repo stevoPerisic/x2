@@ -1,0 +1,46 @@
+<!-- //**************************************************
+//*******	INDEX VIEW	****************
+//************************************************** -->
+<Alloy>
+	<Window id="index" class="container">
+        <!-- Define the styling properties in the TSS file -->
+        <ActivityIndicator id="activityIndicator" message="Loading..."/>
+        
+        <View id="screenSaver" class="content">
+            <View id="screenSaverLogo">
+                <ImageView image="/images/icons/peoplenet-icon.png"/>
+            </View>
+        </View>
+
+        <Require id="header" src="header"/>
+        
+		<View id="left">
+            <View id="clock">
+                <Label id="time"/>
+                <Label id="date"/>
+            </View>
+            <ImageView id="largeLogo"/>
+            
+            <View id="mainMenu">
+                <View class="menuBorder"/>
+                <View id="clockIn" class="mainMenuItem active" autoStyle="true">
+                    <ImageView class="mainMenuIcon" image="/images/icons/existing-employee-inactive-48-white.png"/>
+                    <Label id="employeeLbl" class="mainMenuLabel"/>
+                </View>
+                <View class="menuBorder"/>
+                <View id="manager" class="mainMenuItem" autoStyle="true">
+                    <ImageView class="mainMenuIcon" image="/images/icons/manager-inactive-48-white.png"/>
+                    <Label id="managerLbl" class="mainMenuLabel"/>
+                </View>
+                <View class="menuBorder"/>
+            </View>
+
+           <!--  <ImageView id="poweredBy" image="/images/powered_by@2x.png"/> -->
+            <Label id="versionLbl"/>
+        </View>
+        <View id="right">
+            <Label id="noNetwork"/>
+            <Widget id="pinPad" src="pinPad" />
+        </View>
+	</Window>
+</Alloy>

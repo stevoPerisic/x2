@@ -1,0 +1,38 @@
+<!-- //**************************************************
+//*******	EMPLOYEE OPTIONS MASTER VIEW	****************
+//************************************************** -->
+<Alloy>
+	<Window id="employeeOptions" class="container">
+		<!-- Define the styling properties in the TSS file -->
+        <ActivityIndicator id="activityIndicator" message="Loading..."/>
+        
+		<Require id="header" src="header"/>
+		<View id="content">
+
+			<View id="sidebar">
+				<!-- PERHAPS CHANGE THIS TO A LIST VIEW? -->
+				<Label id="sidebarHeader" />
+				
+				<View id="sideBarMenu">
+					<View id="timesheets" class="employeeOptionsSidemenu active" autoStyle="true" viewToLoad="employeeOptions_timecardDetail">
+						<ImageView class="sideBarMenuIcon" image="/images/icons/timesheets-32-white.png"/>
+						<Label id="timesheetsLbl" class="employeeOptionsSidemenuLabel activeLbl" autoStyle="true" />
+					</View>
+					<View id="notifications" class="employeeOptionsSidemenu" autoStyle="true" viewToLoad="employeeOptions_notifications">
+						<ImageView class="sideBarMenuIcon" image="/images/icons/notifications-32-blk.png"/>
+						<Label id="notificationsLbl" class="employeeOptionsSidemenuLabel" autoStyle="true"/>
+					</View>
+					<View id="settings" class="employeeOptionsSidemenu" autoStyle="true" viewToLoad="employeeOptions_generalSettings">
+						<ImageView class="sideBarMenuIcon" image="/images/icons/settings-32-blk.png"/>
+						<Label id="generalSettingsLbl" class="employeeOptionsSidemenuLabel" autoStyle="true" />
+					</View>
+				</View>
+				
+			</View>
+			
+			<View id="optionsContent"/>
+
+		</View>
+		<!-- <Require id="footer" src="footer"/> -->
+	</Window>
+</Alloy>

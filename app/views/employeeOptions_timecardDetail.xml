@@ -1,0 +1,70 @@
+<Alloy>
+	<View id="timecardDetail" class="content">
+
+			<View id="contentHeader">
+				<Button id="back" platform="ios">
+	                <ImageView class="buttonIcon" image="/images/icons/back-32-blue.png" />
+	                <Label id="backBtnLbl" class="buttonLabel"/>
+	            </Button>
+	            <Button id="back" title="Back" platform="android" />
+
+				<View id="weekNavBtns">
+					<Button id="previousWeek" class="weekNavBtn" platform="ios" autoStyle="true">
+		                <Label id="previousWeekLbl" class="weekNavLbl" autoStyle="true"/>
+		            </Button>
+		            <Button id="previousWeek" title="Previous" week="" platform="android" autoStyle="true"/>
+		            
+		            <View id="verticalLine"/>
+
+		            <Button id="nextWeek" class="weekNavBtn disabled" platform="ios" autoStyle="true">
+		                <Label id="nextWeekLbl" class="weekNavLbl labelDisabled" autoStyle="true"/>
+		            </Button>
+		            <Button id="nextWeek" class="disabled" title="Next" week="" platform="android" autoStyle="true"/>
+				</View>
+				
+	            <View id="commIconsWrap">
+	            	<Label id="print" class="commIcons">
+	            		<ImageView class="commIcons_icon" image="/images/icons/print-24.png"/>
+	            		<Label id="printLbl" class="commIcons_text" text="Print"/>
+	            	</Label>
+	            	<Label id="text" class="commIcons">
+	            		<ImageView class="commIcons_icon" image="/images/icons/text-message-24.png"/>
+	            		<Label id="smsLbl" class="commIcons_text" text="SMS"/>
+	            	</Label>
+	            	<Label id="email" class="commIcons">
+	            		<ImageView class="commIcons_icon" image="/images/icons/1395344760_icon-ios7-email.png"/>
+	            		<Label id="emailLbl" class="commIcons_text" text="Email"/>
+	            	</Label>
+	            </View>
+				
+			</View>
+
+			<View id="timecardWrap">
+				<Label id="timecardWrapHeader"/>
+
+				<View id="tableHolder">
+					<View id="tableLeftContainer">
+						<View class="tableHeaderWrap">
+							<Label id="weeklySummLbl" class="tableHeader"/>
+						</View>
+						
+						<TableView id="tableWeeklySum" class="optionsTable">
+				            <TableViewSection id="weeklySum" />
+				        </TableView>
+					</View>
+
+					<View id="tableRightContainer">
+						<View class="tableHeaderWrap">
+							<Label id="dailySummLbl" class="tableHeader" />
+							<Label id="moreDetails"/>
+						</View>
+						
+						<TableView id="tableDailySum" class="optionsTable">
+				            <TableViewSection id="dailySum" />
+				        </TableView>	
+					</View>
+				</View>
+			</View>
+			
+		</View>
+</Alloy>

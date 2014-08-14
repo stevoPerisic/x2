@@ -1,0 +1,49 @@
+<Alloy>
+	<Window id="clockIn_confirmation">
+
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+
+		<Require id="header" src="header"/>
+
+		<View class="content">
+
+			<View id="review">
+				<View id="reviewLeft">
+					<Label id="reviewText"/>
+					<Label id="nameAndPin" class="reviewLabel"/>
+					<Label id="pin" class="reviewLabel"/>
+					<Label id="departmentName" class="reviewLabel"/>
+					<Label id="date" class="reviewLabel"/>
+					<Label id="clockInTime" class="reviewLabel"/>
+				</View>
+				<View id="reviewRight">
+					<View id="punchPhotoWrap" class="reviewPic">
+						<ImageView id="punchPhoto" />
+						<Label id="reviewPicLabel" class="reviewPicLabel" text="Punch Photo"/>
+					</View>
+					<View id="masterPhotoWrap" class="reviewPic">
+						<ImageView id="masterPhoto" />
+						<Label id="masterPhotoLbl" class="reviewPicLabel"/>
+					</View>
+					
+				</View>
+			</View>
+
+			<View id="acceptPunchButtons">
+				<Label id="acceptPunchText"/>
+
+	            <Label id="yesAcceptPunch" class="confirmationLabel"/>
+
+	            <Label id="yesAndViewHours" class="confirmationLabel"/>
+
+	            <Label id="exit" />
+			</View>
+
+		</View>	
+
+	</Window>
+
+</Alloy>
+
+
+

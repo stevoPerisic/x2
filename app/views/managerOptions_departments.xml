@@ -1,0 +1,10 @@
+<Alloy>
+	<View id="managerOptionsDepartments" class="content">
+		<View id="contentHeader">
+
+			<Label id="managerDepartmentsHeaderTxt" text="Departments"/>
+			
+		</View>
+		<View id="departmentsWebViewWrap"/>
+	</View>
+</Alloy>

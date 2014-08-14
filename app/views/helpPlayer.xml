@@ -1,0 +1,21 @@
+<Alloy>
+	<View id="helpPlayer">
+        <Label id="helpText" text="Sample help text label"/>
+        <View id="buttonWrap">
+            <Button id="stopBtn" platform="ios">
+                <ImageView class="helpPlayerBtnImg" image="/images/icons/9_av_stop.png" />
+            </Button>
+            <Button id="stopBtn" platform="android" />
+
+            <Button id="playBtn" platform="ios">
+                <ImageView class="helpPlayerBtnImg" image="/images/icons/9_av_play.png" />
+            </Button>
+            <Button id="playBtn" platform="android" />
+
+            <Button id="closeHelp" platform="ios">
+                <Label id="closeHelpLbl" text="Close" />
+            </Button>
+            <Button id="closeHelp" title="Close" platform="android" />
+        </View>
+    </View>
+</Alloy>

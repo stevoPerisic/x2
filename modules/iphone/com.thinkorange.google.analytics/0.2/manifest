@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.2
+description: Google Analytics
+author: Rúben Fonseca
+license: MIT
+copyright: Copyright (c) 2011 by ThinkOrange
+
+
+# these should not be edited
+name: google_analytics
+moduleid: com.thinkorange.google.analytics
+guid: 97f3764b-0cdb-4734-9925-f27c04204758
+platform: iphone
+minsdk: 1.7.2

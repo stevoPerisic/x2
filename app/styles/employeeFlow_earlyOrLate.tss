@@ -1,0 +1,29 @@
+//******************************************
+
+"#earlyOrLate":{
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true,
+	//layout: 'horizontal',
+	//horizontalWrap: false
+},
+"#content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+	//layout: 'horizontal',
+	//horizontalWrap: false
+},
+"#earlyOrLateLbl":{
+	top: '20dp',
+	font: {
+		fontSize: '30dp'
+	}
+},
+"#earlyOrLateReasons":{
+	top: '120dp',
+	width: '100%',
+	height: '400dp',
+	left: 0,
+	layout: 'horizontal'
+}

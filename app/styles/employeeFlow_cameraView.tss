@@ -1,0 +1,52 @@
+//******************************************
+// CAMERA VIEW
+"#cameraWindow":{
+	//layout: 'vertical',
+	backgroundColor: '#fcfcfc',
+	fullscreen: true,
+	navBarHidden: true,
+},
+"#instructions":{
+	height: '60dp',
+	top: '65dp',
+	backgroundColor: '#fcfcfc',
+	font: {
+		fontSize: '28dp',
+		fontWeight: 'bold'
+	},
+	color: '#333',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#activityIndicator":{
+	top: '640dp',
+	left: '10%',
+	height: '80dp',
+	width: '80%',
+	zIndex: 1,
+	backgroundColor: '#000',
+	color: '#fff',
+	opacity: '0.7',
+	borderRadius: 20,
+	font: {
+		fontSize: '28dp'
+	}
+},
+"#cameraView":{
+	top : '140dp',
+	width : '500',
+	height : '500',
+	backgroundColor: '#fcfcfc',
+},
+"#takePictureBtn": {
+	top: '573dp',
+	width: 300,
+	height: 60,
+	borderRadius: 10,
+	backgroundColor: '#62bb47',
+	color: 'white',
+	font: {
+		fontSize: '22dp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+}

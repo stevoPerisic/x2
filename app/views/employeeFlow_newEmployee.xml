@@ -1,0 +1,29 @@
+<Alloy>
+	<Window id="newEmployee">
+		
+		<ActivityIndicator id="activityIndicator" message="Loading..."/>
+
+		<Require id="header" src="header"/>
+		
+		<View id="content">
+			
+			<View class="content">
+				<Label id="instructions" text="Please enter your initials:"/>
+
+				<View id="txtFieldBtnWrap">
+					<TextField id="newEmployeeTxtField" hintText="Enter your initials"/>
+
+					<Button id="submitNewEmployee" platform="ios">
+						<Label id="submitNewEmployeeTxt"/>
+		            </Button>
+
+		            <Button id="submitNewEmployee" platform="android" />
+				</View>
+			
+			</View>
+		
+		</View>
+	
+	</Window>
+</Alloy>
+

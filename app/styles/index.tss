@@ -1,0 +1,120 @@
+//**************************************************
+//*******	INDEX STYLES	****************
+//**************************************************
+"#index[platform=android]":{
+	keepScreenOn: true,
+	softKeyboardOnFocus: Ti.UI.Android.SOFT_KEYBOARD_HIDE_ON_FOCUS
+},
+"#left":{
+	top: '8%',
+	width: '50%',
+	height:  '92%',
+	left: 0,
+	backgroundColor: '#666'
+},
+"#right":{
+	top: '8%',
+	width: '50%',
+	height:  '92%',
+	right: 0,
+	backgroundColor: '#fff'
+},
+"#noNetwork":{
+	top: 0,
+	width: '100%',
+	height: '40dp',
+	backgroundColor: '#ff2d55',
+	font: {
+		fontWeight: 'bold',
+		fontSize: '20dp'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: "#fff"
+},
+"#clock":{
+	top: 0,
+	height: '140dp',
+	backgroundColor: "#222"
+},
+"#time":{
+	top: '35dp',
+	font:{
+		fontSize: '40dp'
+	},
+	color: '#f2f2f2'
+},
+"#date":{
+	top: '80dp',
+	color: '#f2f2f2'
+},
+"#largeLogo":{
+	top: '200dp',
+	width: '80%', //THIS SHOULD CHANGE SO THAT WE DON'T NEED RESIZING
+	height: '20%',
+	borderRadius: 10
+},
+"#poweredBy":{
+	bottom: '20dp',
+	height: '40dp'
+},
+"#versionLbl":{
+	bottom: '60dp',
+	font:{
+		fontSize: '10dp'
+	},
+	color: "#fff"
+}
+//**************************************************
+//*******	MAIN MENU STYLES	****************
+//**************************************************
+
+"#mainMenu":{
+	top: '375dp',
+	height: '184dp',
+	width: '100%',
+	backgroundColor: '#666',
+	layout: 'vertical'
+},
+".mainMenuItem":{
+	height: '60dp',
+	width: '80%',
+	backgroundColor: '#666',
+	selectedBackgroundColor: '#666'
+},
+".active":{
+	backgroundColor: "#00a6d5"
+},
+".menuBorder":{
+	width: '80%',
+	height: '1dp',
+	backgroundColor: '#868686'
+}
+".mainMenuIcon":{
+	left: '20dp'
+}
+".mainMenuLabel":{
+	height: '100%',
+	width: '78%',
+	left: '22%',
+	color: '#fff',
+	font: {
+		fontSize: '20dp'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	bubbleParent: true
+}
+// SCREEN SAVER
+"#screenSaver":{
+	top: 0,
+	left: 0,
+	height: '100%',
+	width: '100%',
+	backgroundColor: '#000',
+	zIndex: 2
+},
+"#screenSaverLogo":{
+	width: '130dp',
+	height: '130dp',
+	bottom: 0,
+	right: 0
+}

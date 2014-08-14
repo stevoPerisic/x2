@@ -1,0 +1,188 @@
+<h1>google_analytics Module</h1>
+<h2>Description</h2>
+<p>The Google Analytics for Mobile Apps SDK for iOS makes it easy to implement
+Google Analytics in an iOS-based applications. This document describes how to
+integrate the SDK with your apps.</p>
+<p>The Google Analytics for Mobile Apps SDKs provide an interface for tracking
+activity within mobile apps and reporting that activity to Google Analytics.
+For example you can use this SDK to calculate visits, session length, bounce
+rate and unique visitors. Tracking mobile applications has some structural
+variations from tracking website pages.</p>
+<h2>Accessing the google_analytics Module</h2>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var GoogleAnalytics = require("com.0x82.google.analytics");
+</code></pre>
+<p>The GoogleAnalytics variable is a reference to the Module object. <br />
+</p>
+<h2>Reference</h2>
+<p>The first thing you do is to call the startTracker method with the correct
+credentials.</p>
+<h3>GoogleAnalytics.startTracker({...})</h3>
+<p>Starts the tracker. It is often convenient to call this method as soon as your
+Titanium mobile app starts. You should pass the following arguments:</p>
+<ul>
+<li><em>accountID</em> [required]: the Web property ID, also known as the UA number of your
+  tracking code, and looks like <code>UA-xxxxx-yy</code>.</li>
+<li><em>dispatchPeriod</em> [optional]: dispatch period in seconds. Defaults to 10 seconds.</li>
+<li><em>debug</em> [optional]: true or false, if you want to show debug information when you
+  track events</li>
+</ul>
+<p>Before you begin using the SDK, you must first create a free account at www.google.com/analytics and create a new website profile in that account using a fake but descriptive website URL (e.g. http://mymobileapp.mywebsite.com). Once you create the profile, write down or keep a copy of the web property ID that is generated for the newly-created profile.</p>
+<p>A Web property ID is also known as the UA number of your tracking code and looks like UA-xxxxx-yy, where the x's and y's indicate the unique numbers for your profile. You must indicate the web property ID you'd like to use when instantiating the tracking object. </p>
+<p>You must indicate to your users, either in the application itself or in your terms of service, that you reserve the right to anonymously track and report a user's activity inside of your app. Your use of the Google Analytics SDK is additionally governed by the Google Analytics Terms of Service, which you must agree to when signing up for an account.</p>
+<h3>GoogleAnalytics.dispatch()</h3>
+<p>Forces the dispatcher to send pending information to Google, instead of waiting for
+<code>dispatchSeconds</code> seconds.</p>
+<h3>GoogleAnalytics.trackPageView(path)</h3>
+<p>Tracks a pageView for the path passed as the parameter (required).</p>
+<h3>GoogleAnalytics.trackEvent({...})</h3>
+<p>Tracks an event. For more information about Event tracking refer to the
+<a href="http://code.google.com/apis/analytics/docs/tracking/eventTrackerGuide.html">Event Tracking
+Guide</a>.
+It accepts the following parameters:</p>
+<ul>
+<li><em>category</em> [required]: the event name</li>
+<li><em>action</em> [required]: the action name</li>
+<li><em>label</em> [required]: a label for the event</li>
+<li><em>value</em> [optional]: an optional integer value</li>
+</ul>
+<p>Example:</p>
+<pre><code>GoogleAnalytics.trackEvent({
+  category: 'Videos',
+  action  : 'play',
+  label   : 'Baby\'s First Birthday'
+});
+</code></pre>
+<p>In this scenario, the reports for Events would display Videos as the Category, Play as the Action, and Baby's First Birthday as the Label.</p>
+<h3>GoogleAnalytics.setCustomVariable({...})</h3>
+<p>You'll want to plan out ahead of time which indexes each custom variable maps
+to, so you don't overwrite any previously existing variable. For more
+information on custom variables, see the <a href="http://code.google.com/apis/analytics/docs/tracking/gaTrackingCustomVariables.html">Custom Variable
+Guide</a>.
+Note that the method setCustomVariableAtIndex does not directly send data on
+its own. Rather the data is sent with the next tracked pageview or event. You
+have to call setCustomVariableAtIndex before you track a pageview or event.</p>
+<p>This method accepts the following parameters:</p>
+<ul>
+<li><em>index</em> [required]: a positive integer with the index of the custom variable</li>
+<li><em>name</em> [required]: the name of the variable</li>
+<li><em>value</em> [required]: the value of the variable</li>
+<li><em>scope</em> [optional]: an optional integer with the scope of the variable</li>
+</ul>
+<h3>GoogleAnalytics.getVisitorCustomVariable(index)</h3>
+<p>Returns a string with the customer custom variable at the specified index.
+Returns null if no variable is found or index is out of range.</p>
+<h2>Using Ecommerce Tracking</h2>
+<p>There are 4 methods you use to enable Ecommerce tracking in your application:</p>
+<ul>
+<li>addTransaction</li>
+<li>addItem</li>
+<li>trackTransactions</li>
+<li>clearTransactions</li>
+</ul>
+<p>Calling addTransaction and addItem adds the transaction or item to an internal
+Ecommerce buffer, to which more items and transactions can be added. Only when
+calling trackTransactions will the transactions and items be sent to the
+dispatcher and get queued to be sent to Google Analytics.  To clear the buffer,
+you can call the clearTransactions method. Note: it does not recall any
+transactions previously sent to the dispatcher nor any transactions already
+collected by Google Analytics.</p>
+<p>For more information about Ecommerce tracking refer to the
+<a href="http://code.google.com/apis/analytics/docs/tracking/gaTrackingEcommerce.html">Ecommerce Tracking
+Guide</a>.</p>
+<h3>GoogleAnalytics.addTransaction({...})</h3>
+<p>The transaction object stores all the related information about a single transaction, such as the order ID, shipping charges, and billing address. The information in the transaction object is associated with its items by means of the order IDs for the transaction and all items, which should be the same ID.</p>
+<ul>
+<li><em>orderID</em> [required]: string with the order ID</li>
+<li><em>storeName</em> [required]: the name of the store</li>
+<li><em>totalPrice</em> [optional]: the total price, as a float</li>
+<li><em>totalTax</em> [optional]: the taxes, as a float</li>
+<li><em>shippingCost</em> [optional]: shipping costs, as a float</li>
+</ul>
+<p>Example:</p>
+<pre><code>GoogleAnalytics.addTransaction({
+  orderID: '1',
+  storeName: "Womens Apparel",
+  totalPrice: 2.45,
+  totalTax: 0.69,
+  shippingCost: 1.00
+});
+</code></pre>
+<h3>GoogleAnalytics.addItem({...})</h3>
+<p>This method tracks information about each individual item in the user's shopping cart and associates the item with each transaction via the orderID field. This method tracks the details about a particular item, such as SKU, price, category, and quantity.</p>
+<ul>
+<li><em>orderID</em> [required]: string with the order ID</li>
+<li><em>itemSKU</em> [required]: the item SKU</li>
+<li><em>itemName</em> [required]: the item name</li>
+<li><em>itemPrice</em> [required]: the price of the product, as a float</li>
+<li><em>itemCategory</em> [required]: the category of the item</li>
+<li><em>itemCount</em> [required]: the number of items</li>
+</ul>
+<p>Example:</p>
+<pre><code>GoogleAnalytics.addItem({
+  orderID: '1',
+  itemName: 'pair of socks',
+  itemSKU: 'asdfasdfadfasdf',
+  itemPrice: 2.45,
+  itemCount: 1,
+  itemCategory: 'category'
+});
+</code></pre>
+<h3>GoogleAnalytics.trackTransactions()</h3>
+<p>After you add a transaction and some items, you can send the transaction to the
+analytics server by calling this method.
+It confirms that a purchase has occurred, and all data that has been built up in the transaction object is finalized as a transaction.</p>
+<h3>GoogleAnalytics.clearTransactions()</h3>
+<p>You can always rollback any of your pending transactions by calling this method</p>
+<h2>Other methods</h2>
+<h3>GoogleAnalytics.setAnonymizeIp(boolean)</h3>
+<p>To anonymize visitor IP information, call this method with <code>true</code>. This tells
+Google Analytics to anonymize the information sent by the SDK by removing
+the last octet of the IP address prior to its storage.</p>
+<h3>GoogleAnalytics.setSampleRate(sample_rate)</h3>
+<p>You can set the sample rate using this method. If your application generates a
+lot of Analytics traffic, setting the sample rate may prevent your reports from
+being generated using sampled data. Sampling occurs consistently across unique
+visitors, so there is integrity in trending and reporting when sample rate is
+enabled. The sample_rate parameter is an integer and can have value between 0
+and 100, inclusive.</p>
+<p>A rate of 0 turns off hit generation, while a rate of 100 sends all data to
+Google Analytics. It's best to set sample_rate prior to calling any tracking
+methods.</p>
+<pre><code>GoogleAnalytics.setSampleRate(95);
+</code></pre>
+<h2>Tracking Campaigns</h2>
+<p>You can now track campaign referrals. For example, if your application
+implements a Custom URL Scheme, you can create a URL that contains campaign
+query parameters. When your application launches in response to such a URL, you
+can retrieve the query parameters and pass them to setReferrer so that the
+information is stored in Google Analytics.</p>
+<h3>GoogleAnalytics.setReferrer(referrer)</h3>
+<p>Sets the initial campaign information. The referral string passed into
+setReferrer needs to follow a specific format. It must take the form of a set
+of URL parameters and must include at least a gclid parameter or one each of
+utm_campaign, utm_medium and utm_source. In the latter case, it can have
+utm_term and utm_content parameters as well.</p>
+<h2>Events</h2>
+<h3>complete</h3>
+<p>Fired everytime information is successfully send to Google Analytics.</p>
+<pre><code>var GoogleAnalytics = require('com.Ox82.google.analytics');
+GoogleAnalytics.addEventListener('complete', function(e) {
+  Ti.API.log("Data sent to google :D");
+  Ti.API.log("eventsDispatched " + e.eventsDispatched);
+  Ti.API.log("eventsFailedDispatch", e.eventsFailedDispatch);
+});
+</code></pre>
+<h3>hit_string</h3>
+<p>Fired when a hit as been dispatched.</p>
+<pre><code>var GoogleAnalytics = require('com.Ox82.google.analytics');
+GoogleAnalytics.addEventListener('hit_string', function(e) {
+  Ti.API.log("Hit dispatched :D --&gt; " + e.hit_string);
+});
+</code></pre>
+<h2>Usage</h2>
+<p>Please see the examples/app.js for an example App.</p>
+<h2>Author</h2>
+<p>Rúben Fonseca, (C) 2011</p>
+<h2>License</h2>
+<p>MIT</p>

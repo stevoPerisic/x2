@@ -1,0 +1,65 @@
+<Alloy>
+	<View id="generalSettings" class="content">
+		<View id="contentHeader">
+			<Button id="back" platform="ios">
+                <ImageView class="buttonIcon" image="/images/icons/back-32-blue.png" />
+                <Label id="backLbl" class="buttonLabel"/>
+            </Button>
+            <Button id="back" title="Back" platform="android" />
+
+			<Label id="emplSettingsHeader"/>
+			
+		</View>
+
+		<View id="settingsTableWrap">
+
+			<Label id="personalPrefLbl" class="emplOptsTblHeaders"/>
+
+			<TableView id="employeeSettings">
+				<TableViewRow id="badgeId">
+					<Label id="badgeId_text" class="settingName"/>
+					<Label id="badgeIdLbl" class="settingValue"/>
+				</TableViewRow>
+				<TableViewRow id="email">
+					<Label id="email_text" class="settingName"/>
+					<Label id="emailLbl" class="settingValue"/>
+					<ImageView id="emailArrow" class="editArrow" image='images/icons/1_navigation_next_item.png'/>
+					<TextField id="emailTxtField" class="settingTxtField" hintText="john.doe@company.com"/>
+				</TableViewRow>
+				<TableViewRow id="cellPhoneNum">
+					<Label id="cellPhoneNum_text" class="settingName"/>
+					<Label id="cellPhoneLbl" class="settingValue"/>
+					<ImageView id="cellPhoneArrow" class="editArrow" image='images/icons/1_navigation_next_item.png'/>
+					<TextField id="cellPhoneNumTxtField" class="settingTxtField" hintText="000-000-0000"/>
+				</TableViewRow>
+				<TableViewRow id="mobileCarrier">
+					<Label id="mobileCarrier_text" class="settingName"/>
+					<Label id="mobileCarrierLbl" class="settingValue" order=""/>
+					<ImageView class="editArrow" image='images/icons/1_navigation_next_item.png'/>
+				</TableViewRow>
+			</TableView>
+
+			<Label id="langPrefLbl" class="emplOptsTblHeaders"/>
+
+			<TableView id="languagePrefs">
+				<TableViewRow id="en_us">
+					<Label id="en_usLbl" class="languagePrefsLbl"/>
+					<ImageView id="en_usCheck" class="langCheck" image="/images/icons/1_navigation_accept_blk.png"/>
+				</TableViewRow>
+				<TableViewRow id="es">
+					<Label id="esLbl" class="languagePrefsLbl"/>
+					<ImageView id="esCheck" class="langCheck" image="/images/icons/1_navigation_accept_blk.png"/>
+				</TableViewRow>
+				<TableViewRow id="fr">
+					<Label id="frLbl" class="languagePrefsLbl"/>
+					<ImageView id="frCheck" class="langCheck" image="/images/icons/1_navigation_accept_blk.png"/>
+				</TableViewRow>
+			</TableView>
+		</View>
+
+		<View id="cellCarriersTableWrap">
+			<TableView id="cellCarriers"/>
+		</View>
+
+	</View>
+</Alloy>

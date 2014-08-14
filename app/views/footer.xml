@@ -1,0 +1,13 @@
+<!-- **************************************************
+******* FOOTER VIEW    ****************
+************************************************** -->
+<Alloy>
+	<View id="footer">
+        <Button id="employeeOptions" platform="ios">
+            <ImageView class="buttonIcon" image="/images/icons/more-options-32-white.png" />
+            <Label id="more_options" class="buttonLabel"></Label>
+        </Button>
+
+        <Button id="employeeOptions" title="More Options" employeeAlloyID="" platform="android" />
+	</View>
+</Alloy>

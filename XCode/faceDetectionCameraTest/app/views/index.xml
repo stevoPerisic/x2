@@ -1,0 +1,13 @@
+<Alloy>
+	<Window class="container">
+		<View id="cameraView"/>
+		<ImageView id="pictureView"/>
+		<Button id="startCapture" onClick="onStartCapture"/>
+		<Button id="stopCapture" onClick="onStopCapture"/>
+		<Button id="takePicture" onClick="onTakePicture"/>
+		<!-- side-scrolling view of images -->
+		<ScrollView id="croppedImagesView">
+			
+		</ScrollView>
+	</Window>
+</Alloy>

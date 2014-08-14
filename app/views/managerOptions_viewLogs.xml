@@ -1,0 +1,27 @@
+<Alloy>
+	<View id="tableWrap">
+		<View id="tableHeader">
+
+	        <View id="time" class="logsTableBtns" order="desc">
+	            <Label class="logsBtnLabel">Time</Label>
+	            <ImageView id="timeArrow" class="tabelSorterImg" image="/images/icons/1_navigation_expand.png" width="20%"/>
+	        </View>
+
+	        <View class='separator'/>
+
+	        <View id="severity" class="logsTableBtns" order="asc">
+	            <Label class="logsBtnLabel">Severity</Label>
+	            <ImageView id="severityArrow" class="tabelSorterImg" image="/images/icons/1_navigation_expand.png" width="20%"/>
+	        </View>
+
+	        <View class='separator'/>
+
+	        <View id="message" class="logsTableBtns">
+	            <Label class="logsBtnLabel">Message</Label>
+	        </View>
+
+		</View>
+
+		<TableView id="logs"/>
+	</View>
+</Alloy>

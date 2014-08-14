@@ -1,0 +1,79 @@
+<Alloy>
+	<View id="managerOptionsSettings" class="content">
+		<View id="contentHeader">
+			<Button id="back" platform="ios">
+                <ImageView class="buttonIcon" image="/images/icons/1_navigation_previous_item.png" />
+                <Label id="backLbl" class="buttonLabel">Back</Label>
+            </Button>
+            <Button id="back" title="Back" platform="android" />
+
+			<Label id="managerSettingsHeaderTxt" text="Clock Settings"/>
+			
+			<Button id="sendLogs" platform="ios">
+                <Label id="sendLogsLbl" class="buttonLabel">Send Logs</Label>
+            </Button>
+            <Button id="sendLogs" title="Send logs" platform="android" />
+
+		</View>
+
+
+		<View id="clockSettingsTableWrap">
+			<TableView id="clockSettings">
+				<TableViewRow id="hostURL">
+					<Label id="hostURL_title" class="settingName" text="Host URL"/>
+					<Label id="hostURLLbl" class="settingValue"/>
+				</TableViewRow>
+				<TableViewRow id="terminalId">
+					<Label id="terminalId_title" class="settingName" text="Terminal ID"/>
+					<Label id="terminalIdLbl" class="settingValue"/>
+					<ImageView id="terminalIdArrow" class="editArrow" image='images/icons/1_navigation_next_item.png'/>
+					<TextField id="terminalIdTxtField" class="settingTxtField" hintText="Enter New Terminal ID"/>
+				</TableViewRow>
+				<TableViewRow id="version">
+					<Label id="version_title" class="settingName" text="Version"/>
+					<Label id="versionLbl" class="settingValue"/>
+				</TableViewRow>
+				<TableViewRow id="device">
+					<Label id="device_title" class="settingName" text="Device"/>
+					<Label id="deviceLbl" class="settingValue"/>
+				</TableViewRow>
+				<TableViewRow id="timezone">
+					<Label id="timezone_title" class="settingName" text="Timezone"/>
+					<Label id="timezoneLbl" class="settingValue"/>
+				</TableViewRow>
+				<TableViewRow id="lastConnect">
+					<Label id="lastConnect_title" class="settingName" text="Last Connect"/>
+					<Label id="lastConnectLbl" class="settingValue"/>
+				</TableViewRow>
+			</TableView>
+
+			<View class="buttonWrap">
+	        	<Button id="quickUpdate" class="managerOptsBtn" platform="ios">
+	                <Label class="buttonLabel">Quick Update</Label>
+	                <Label id="lastQUPDATE"/>
+	            </Button>
+	            <Button id="quickUpdate" class="managerOptsBtn" title="Quick Update" platform="android" />
+
+	            <Button id="longUpdate" class="managerOptsBtn" platform="ios">
+	                <Label class="buttonLabel">Long Update</Label>
+	                <Label id="lastLUPDATE"/>
+	            </Button>
+	            <Button id="longUpdate" class="managerOptsBtn" title="Long Update" platform="android" />
+
+	            <Button id="viewLogs" class="managerOptsBtn last" platform="ios">
+	                <Label class="buttonLabel">View Logs</Label>
+	            </Button>
+	            <Button id="viewLogs" class="managerOptsBtn last" title="View Logs" platform="android" />
+
+	            <Button id="send_CSV" class="managerOptsBtn" platform="ios">
+	                <Label class="buttonLabel">Send CSV</Label>
+	            </Button>
+	            <Button id="send_CSV" class="managerOptsBtn" title="Send CSV" platform="android" />
+	        </View>
+
+		</View>
+
+		<View id="logsTableViewWrap"/>
+		
+	</View>
+</Alloy>

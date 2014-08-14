@@ -1,0 +1,160 @@
+//******************************************
+// Employee pic and clock In/Out buttons
+"#content":{
+	top: '8%',
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+	layout: 'horizontal',
+	horizontalWrap: false
+}
+".content":{
+	backgroundColor: '#fcfcfc',
+	width: Ti.UI.FILL,
+	layout: 'vertical'
+},
+"#clockInOut":{
+	backgroundColor:"#fcfcfc",
+	fullscreen: true,
+	navBarHidden: true,
+	//layout: 'horizontal',
+	//horizontalWrap: false
+},
+"#employeePicBackground": {
+	height: Ti.UI.Fill,
+	width: '35%',
+	backgroundColor: "#e4e4e4",
+	layout: 'vertical'
+}
+"#employeePicWrap":{
+	top: '40dp',
+	//left:'20dp',
+	width: '80%',
+	height: '40%',
+	backgroundColor: '#fff',
+	borderRadius: 10,
+	borderColor: '#dadada',
+	layout: 'vertical'
+},
+//Size of the pic is 512x512
+"#employeePic":{
+	top: '7%',
+	width: '84%',
+	height: '65%'
+},
+"#name":{
+	top: '16dp',
+	height: '20dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	}
+},
+"#name[platform=android]":{
+	top: '10dp',
+	height: '25dp'
+},
+"#pinNo":{
+	top: '5dp',
+	height: '25dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontSize: '20dp'
+	}
+},
+"#notMe":{
+	top: '40dp',
+	width: '80%',
+	borderRadius: 10,
+	borderColor: '#ccc',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#e4e4e4'],
+        backFillStart: false
+    },
+	color: "#fff",
+},
+"#notMe[platform=android]":{
+	color: '#000'
+},
+"#notMeLabel":{
+	left: 0,
+	color: '#000',
+	width: '100%',
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+
+"#clockAndButtons":{
+	top: '20dp',
+	left:"2%",
+	width: '63%'
+},
+"#clock":{
+	top: '70dp',
+	height: '140dp',
+	backgroundColor: "#fcfcfc"
+},
+"#time":{
+	top: '35dp',
+	font:{
+		fontSize: '60dp'
+	},
+	color: '#000',
+},
+"#date":{
+	top: '110dp',
+	color: '#000',
+	font: {
+		fontSize: '25dp'
+	}
+},
+
+// THE ACTUAL CLOCK STYLES ADDED DYNAMICALLY IN THE CONTROLLER
+"#clockIn":{
+	width: '260dp',
+	height: '140dp',
+	left: '4%',
+	backgroundColor: '#62bb47',
+	color: '#fff',
+	borderRadius: 10,
+	borderColor: '#62bb47',
+	font: {
+		fontSize: '24dp',
+		fontWeight: 'bold'
+	}
+},
+".buttonLabel": {
+	backgroundColor: 'transparent',
+	width: '260dp', 
+	color: '#fff',
+	font: {
+		fontSize: '34dp',
+		fontWeight: 'bold'
+	},
+	left: 0,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+"#clockOut":{
+	width: '260dp',
+	height: '140dp',
+	right: '4%',
+	backgroundColor: '#ff2d55',
+	color: '#fff',
+	borderRadius: 10,
+	borderColor: '#ff2d55',
+	font: {
+		fontSize: '24dp',
+		fontWeight: 'bold'
+	}
+},
+".timeLabel":{
+	color: '#fff',
+	bottom: '10dp'
+}
+

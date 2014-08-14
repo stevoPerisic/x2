@@ -1,0 +1,26 @@
+"#contentHeader":{
+	top: 0,
+	height: '60dp',
+	width: '100%',
+	backgroundColor: 'transparent',
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#fff', '#f0f0f0'],
+        backFillStart: false
+    },
+    borderWidth: 1,
+	borderColor: '#e4e4e4'
+},
+"#managerDepartmentsHeaderTxt":{
+   font: {
+        fontSize: '24dp',
+        fontWeight: 'bold'
+    },
+    color: '#AEAEAE' 
+}
+"#departmentsWebViewWrap":{
+    top: '80dp',
+    width: '100%'
+},

@@ -1,0 +1,8 @@
+<Alloy>
+	<View id="managerOptionsPeople" class="content">
+		<View id="contentHeader">
+			<Label id="managerPeopleHeaderTxt" text="People"/>
+		</View>
+		<View id="peopleWebViewWrap"/>
+	</View>
+</Alloy>
